@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Manejo de cajas con CSS</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<style type="text/css">
+		*{
+			margin:0;
+			padding: 0;
+		}
+		body {
+			background: #000 url("http://igtny.com/images/footerBg.jpg");
+			color: #FFF;
+		}
+	   #Contenido {
+	   	border: 3px solid;
+	   	margin: 0 auto;
+	   	width: 700px;
+	   }
+	   #Cabecera {
+	   	background: blue url("https://pbs.twimg.com/media/CWmix7uU4AAVAiX.jpg") no-repeat;
+	   	background-position: center;
+	   	background-size: cover;
+	   	/*border: 3px solid;*/
+	   
+	   	/*width: 694px;/*700 - 3px(borde izquierdo) - 3px(borde derecho) = 694*/
+	   	width: 100%;
+	    height: 183px;
+	   	text-align: center;
+	   	text-transform: uppercase;
+	   	font-size: 20pt;
+	   	line-height: 183px;
+	   	font-family: 'Roboto', sans-serif;
+	   }
+	  
+	   #Cuerpo {
+	   	display: flex;
+	   	justify-content: center;
+	   	align-items: center;
+
+	   	float: left;
+	   	/*background: blue url("Cuerpo.jpg") repeat-y;*/
+	   	background: #1B2631;
+	   	color: white;
+	   	/*height: 200px; no es necesario especificar altura*/
+	   	/*width: 694px solid;*/
+	   	width: 80%;
+	   	height: 500px;
+	   	/*text-align: center;*/
+	   	font-family: 'Roboto', sans-serif;
+	   }
+	   .content{
+	   	padding: 30px;
+	   }
+	   #Menu {
+	   	background: linear-gradient(-45deg,#1B2631,black);
+	   	float: left;
+	   	width: 20%;
+	   	height: 500px;
+	   }
+	   #Pie {
+	   	clear: both;
+	   	background: blue url("http://www.bes.com.mx/images/footer/bg-textured/wg_dark_background3.jpg"); /*repeat-x*/ 
+	   	width: 100%;
+	   	height: 100px;
+	   	line-height: 100px;
+	   	font-family: 'Roboto', sans-serif;
+	   }
+
+	   .contentpie{
+	   	display: block;
+	   	width: 500px;
+	   	margin: 0 auto;
+	   	text-align: center;
+	   	line-height: auto;
+	   }
+
+	   #Cuerpo h1{
+	   	text-transform: uppercase;
+	   }
+	   
+	   .listMenu{
+	   	margin-top: 80px;
+	   	list-style: none;
+	   	line-height: 50px;
+	   	text-align: center;
+	   }
+	   li > a:hover{
+	   	display: block;
+	   	transform: translateX(10px);
+	   	/*transform: scale(1.3,1.3);*/
+		transition: all .3s;
+		color:black;
+	   }
+	  li > a{
+	   	transition: all .3s;
+	   	display: block;
+	   	color: white;
+	   	text-decoration: none;
+	   	/*color: #CC0000;*/
+	   	font-size: 10pt;
+	   	font-family: 'Roboto', sans-serif;
+	   }
+		.listMenu li:hover{
+			transition: all .5s;
+			background: white;
+		}
+	   
+	</style>
+</head>
+<body>
+<div id="Contenido">
+	<div id=Cabecera><h1>programación web</h1></div>
+	<div id=Menu>
+		<ul class="listMenu">
+			<li><a target="blank" href="index.html">Nosotros</a></li>
+			<li><a target="blank" href="http://posgrado.itlp.edu.mx/">Portafolio</a></li>
+			<li><a target="blank" href="https://julianbifrost.github.io/CurriculumVitae/">Contacto</a></li>
+		</ul>
+	</div>
+	<div id="Cuerpo">
+		<div class="content">
+			<h1>Manipulación de divs en CSS</h1>
+			<p>Ejemplo de cajas con CSS</p>
+			<p>Manejo de cajas</p>
+			<p>Manejo de fondo</p>
+			<p>Repeticion horizontal y vertical</p>
+			<p>Ejemplo de cajas con CSS</p>
+			<p>Manejo de cajas</p>
+			<p>Manejo de fondo</p>
+			<p>Repeticion horizontal y vertical</p>
+			<p>Ejemplo de cajas con CSS</p>
+			<p>Manejo de cajas</p>
+			<p>Manejo de fondo</p>
+			<p>Repeticion horizontal y vertical</p>
+			<p>Ejemplo de cajas con CSS</p>
+			<p>Manejo de cajas</p>
+			<p>Manejo de fondo</p>
+			<p>Repeticion horizontal y vertical</p>
+		</div>
+	</div>
+	<div id="Pie">
+		<div class="contentpie">Develop by José Julián Arroyo Quintero</div>
+	</div>
+</div>
+</body>
+</html>
